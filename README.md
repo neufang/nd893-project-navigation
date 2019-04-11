@@ -53,7 +53,8 @@ To set up your python environment to run the code in this repository, follow the
 
 2. install several dependencies.
 ```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
 ### Instructions
 
