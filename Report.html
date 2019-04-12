@@ -12218,12 +12218,17 @@ Environment solved in 37 episodes!	Average Score: 27.03
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Analysis-and-future-work">Analysis and future work<a class="anchor-link" href="#Analysis-and-future-work">&#182;</a></h3><p>To select the best decay for $\epsilon$-greedy policy, I tried munual greedy search of numbers between 0 and 1. To small number may help with the convergence of algorithm optimization, but when i watch the performance of trained agents, it seems to be unstable. To balance the tradeoff of fast training and stable agent behavior, I choose <code>0.8</code>.</p>
-<p>Some possible future works:</p>
+<p>Some possible improvement:</p>
 <ul>
 <li>difference combination number of parameters in each layers of neural network, </li>
 <li>use different activation function</li>
 <li>try more sophisticated deep learning models</li>
 <li>take both history and current state for training, in this case, CNN or RNN model could be learn more powerful agent models</li>
+</ul>
+<p>Some future work:</p>
+<ul>
+<li>Learning and acting under partial information, as observed in the testing, the angent might run into some bad situation (such as facing two many blue bananas) and freeze. In this case, it's very helpful to inference the global evironment with limite partial information.</li>
+<li>Efficient sample-based planning. Find the best strategy to sample from experience replay and improve the diversity of training data for DQN.</li>
 </ul>
 
 </div>
